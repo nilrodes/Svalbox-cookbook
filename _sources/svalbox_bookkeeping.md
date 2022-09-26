@@ -60,5 +60,5 @@ An example filled out for the hypothetical Longyearbyen data set.
 ```
 
 It is important to frequently save your progress to the SBL table!
-The Svalbox DB takes care of people editing the same data elsewhere, so no need to worry about things.
+The Svalbox DB takes care of people editing the same data elsewhere, so no need to worry about things..
 
