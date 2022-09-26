@@ -89,6 +89,11 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.gif" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">The Svalbox Cookbook</h1>
@@ -397,7 +402,7 @@ In practice, however, any software connecting to the SBL with the right credenti
 <h3>The QGIS way<a class="headerlink" href="#the-qgis-way" title="Permalink to this headline">#</a></h3>
 <p>The easiest way is to connect to the SBL table by connecting to the Svalbox PostGIS server, see <a class="reference internal" href="#postgis-connection"><span class="std std-numref">Fig. 1</span></a>.
 The connection uses a limited-access account called <em>Bookkeeping_writer</em>, which only has write access to the SBL table.
-A password is provided for those that need access.</p>
+A password is provided for those that need access, and can be found ine Svalbox Password Manager (bitwarden).</p>
 <figure class="align-default" id="postgis-connection">
 <a class="reference internal image-reference" href="_images/postgis_connection_svalbox.gif"><img alt="_images/postgis_connection_svalbox.gif" src="_images/postgis_connection_svalbox.gif" style="height: 600px;" /></a>
 <figcaption>

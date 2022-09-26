@@ -35,7 +35,7 @@ To be done - information on posting of all datasets on the Github Svalbox discus
 
 The easiest way is to connect to the SBL table by connecting to the Svalbox PostGIS server, see {numref}`postgis_connection`.
 The connection uses a limited-access account called *Bookkeeping_writer*, which only has write access to the SBL table.
-A password is provided for those that need access.
+A password is provided for those that need access, and can be found ine Svalbox Password Manager (bitwarden).
 
 ```{figure} ./assets/postgis_connection_svalbox.gif
 ---
