@@ -22,6 +22,8 @@ The following metadata are required for the SBL table:
 - **processed**: Tick if this data has been processed/is ready for QCing and uploading.
 - **QCed**: Tick if this data has been QCed and is ready for uploading. This includes not only the data quality assurance, but also compilation of all relevant metadata.
 - **uploaded_to_DB**: Tick if the data has been uploaded to the Svalbox Database. Ticked data will be removed at regular intervals.
+- **declined**: Tick if the data has been declined for uploading/processing/Qcing.
+- **folder_size_in_gb**: Size of the item/data set in GB.
 - **geom**: Point geometry of where the data was acquired, filled out automatically if picked in QGIS.
 - **id**: unique identifier of the data; filled out automatically by QGIS.
 
@@ -60,4 +62,55 @@ An example filled out for the hypothetical Longyearbyen data set.
 ```
 
 It is important to frequently save your progress to the SBL table!
-The Svalbox DB takes care of people editing the same data elsewhere, so no need to worry about things..
+
+#### (Post-)Editing of the SBL
+
+You may edit previously created points with the *Bookkeeping_editor* credentials.
+These need to be provided when connecting to the Svalbox PostGIS server as seen in {numref}`postgis_connection`.
+
+{numref}`open_bookkeeping_attributes` illustrates how the attribute table of a feature can be opened in QGIS.
+The animation illustrates the editing of the SBL, which is used to keep track of unpublished Svalbox data.
+
+```{figure} ../assets/open_bookkeeping_attributes.gif
+---
+height: 600px
+name: open_bookkeeping_attributes
+---
+Accessing attributes of a layer, editing the attributes, and saving the layer in QGIS.
+```
+
+Remember to frequently save changes that have been made, while at the same time making sure that only correct revisions have been made.
+Once done, make sure to exit the editing mode my clicking the pencil icon once more, to leave the layer in the much safer *read-only mode*.
+The Svalbox DB takes care of people editing the same data elsewhere, so no need to worry about things.
+
+#### Reporting data sizes
+
+{numref}`Check_file_size` shows how to get the folder size in windows.
+The SBL requires the folder size to be filled out in GB.
+
+```{figure} ../assets/Check_file_size.gif
+---
+height: 600px
+name: Check_file_size
+---
+Checking folder size in windows.
+```
+
+This is the number of bytes highlighted in {numref}`Check_file_size`, which you divide by 1 000 000 000, and then round up.
+An example of this for the Gipshuken dataset is shown in {numref}`Folder_file_size_example`.
+
+```{figure} ../assets/Folder_file_size_example.png
+---
+height: 450px
+name: Folder_file_size_example
+---
+Write down folder size.
+
+```
+
+`````{admonition} Keep the SBL updated
+:class: tip
+Make sure you keep the metadata in the SBL tables up to date...
+Exported a model or removed some photos?
+Then it is important to recheck the folder size while checking the processed/QC boxes.
+`````

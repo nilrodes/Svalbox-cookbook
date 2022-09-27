@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Svalbox Bookkeeping &#8212; The Svalbox Cookbook</title>
+    <title>Svalbox quality control check-list &#8212; The Svalbox Cookbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Svalbox quality control check-list" href="svalbox_qcing.html" />
-    <link rel="prev" title="Read-access to Svalbox resources" href="read-access.html" />
+    <link rel="next" title="MerginMaps/Data in the field" href="merginmaps.html" />
+    <link rel="prev" title="Svalbox Bookkeeping" href="svalbox_bookkeeping.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -124,13 +124,13 @@ const thebe_selector_output = ".output, .cell_output"
    Read-access to Svalbox resources
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="svalbox_bookkeeping.html">
    Svalbox Bookkeeping
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="svalbox_qcing.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Svalbox quality control check-list
   </a>
  </li>
@@ -265,7 +265,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/svalbox/Svalbox-cookbookk/issues/new?title=Issue%20on%20page%20%2Fnotes/svalbox_bookkeeping.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/svalbox/Svalbox-cookbookk/issues/new?title=Issue%20on%20page%20%2Fnotes/svalbox_qcing.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -293,7 +293,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/notes/svalbox_bookkeeping.md"
+        <a href="../_sources/notes/svalbox_qcing.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -353,38 +353,14 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-to-contribute-to-the-svalbox-bookkeeping-layer-sbl">
-   How to contribute to the Svalbox Bookkeeping Layer (SBL)?
+  <a class="reference internal nav-link" href="#processing">
+   Processing
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#required-sbl-metadata">
-     Required SBL metadata
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-github-way">
-     The Github way
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-qgis-way">
-     The QGIS way
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#post-editing-of-the-sbl">
-       (Post-)Editing of the SBL
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#reporting-data-sizes">
-       Reporting data sizes
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quality-control">
+   Quality control
+  </a>
  </li>
 </ul>
 
@@ -395,7 +371,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Svalbox Bookkeeping</h1>
+                <h1>Svalbox quality control check-list</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -406,38 +382,14 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-to-contribute-to-the-svalbox-bookkeeping-layer-sbl">
-   How to contribute to the Svalbox Bookkeeping Layer (SBL)?
+  <a class="reference internal nav-link" href="#processing">
+   Processing
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#required-sbl-metadata">
-     Required SBL metadata
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-github-way">
-     The Github way
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-qgis-way">
-     The QGIS way
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#post-editing-of-the-sbl">
-       (Post-)Editing of the SBL
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#reporting-data-sizes">
-       Reporting data sizes
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quality-control">
+   Quality control
+  </a>
  </li>
 </ul>
 
@@ -449,103 +401,82 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="svalbox-bookkeeping">
-<h1>Svalbox Bookkeeping<a class="headerlink" href="#svalbox-bookkeeping" title="Permalink to this headline">#</a></h1>
-<p>Keeping track of data is as important as the data themselves.
-For this reason we have established a basic bookkeeping layer in the Svalbox database.
-The goal? Keeping track of data acquired in the field - as well as their temporary storage location!</p>
-<section id="how-to-contribute-to-the-svalbox-bookkeeping-layer-sbl">
-<h2>How to contribute to the Svalbox Bookkeeping Layer (SBL)?<a class="headerlink" href="#how-to-contribute-to-the-svalbox-bookkeeping-layer-sbl" title="Permalink to this headline">#</a></h2>
-<p>The Svalbox Boookeeping Layer (SBL) is accessible through the Svalbox PostGIS backend and frontends that can connect to the PostGIS server.
-Perhaps the easiest and most straight forward way is to use <a class="reference external" href="https://www.qgis.org/en/site/forusers/download.html">QGIS</a>, which we illustrate below.
-In practice, however, any software connecting to the SBL with the right credentials can edit the table, so go with your best flow :).</p>
-<section id="required-sbl-metadata">
-<span id="sbl-metadata"></span><h3>Required SBL metadata<a class="headerlink" href="#required-sbl-metadata" title="Permalink to this headline">#</a></h3>
-<p>The following metadata are required for the SBL table:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="svalbox-quality-control-check-list">
+<h1>Svalbox quality control check-list<a class="headerlink" href="#svalbox-quality-control-check-list" title="Permalink to this headline">#</a></h1>
+<p>Prior to submission of data to the curated Svalbox databases, several steps need to be gone through.
+These include:</p>
 <ul class="simple">
-<li><p><strong>name</strong>: Locality name of where the data was acquired</p></li>
-<li><p><strong>uri</strong>: Unique identifier for the data; for DOMs this is typically the SketchFab ID. This field may be in a list form, using the “;” (semicolon) to separate entries.</p></li>
-<li><p><strong>file_location</strong>: The location where to find the raw data; preferably in file path on the Svalbox server. Remember that this is useable not just for you, but to all those looking for the data!</p></li>
-<li><p><strong>data_type</strong>: Pick the data type; examples include DOM, DCM, DSM (digital sample model), image_360, video_360, etc.</p></li>
-<li><p><strong>processed</strong>: Tick if this data has been processed/is ready for QCing and uploading.</p></li>
-<li><p><strong>QCed</strong>: Tick if this data has been QCed and is ready for uploading. This includes not only the data quality assurance, but also compilation of all relevant metadata.</p></li>
-<li><p><strong>uploaded_to_DB</strong>: Tick if the data has been uploaded to the Svalbox Database. Ticked data will be removed at regular intervals.</p></li>
-<li><p><strong>declined</strong>: Tick if the data has been declined for uploading/processing/Qcing.</p></li>
-<li><p><strong>folder_size_in_gb</strong>: Size of the item/data set in GB.</p></li>
-<li><p><strong>geom</strong>: Point geometry of where the data was acquired, filled out automatically if picked in QGIS.</p></li>
-<li><p><strong>id</strong>: unique identifier of the data; filled out automatically by QGIS.</p></li>
+<li><p>Data inspection and processing (<em>processed</em> checkbox)</p></li>
+<li><p>Quality control and metadata extraction (<em>qced</em> checkbox)</p></li>
+<li><p>Submission to Svalbox (<em>uploaded_to_db</em> checkbox)</p></li>
 </ul>
-<p>Seeing as these are all required prior to publishing, make sure to have these lists handy!</p>
-</section>
-<section id="the-github-way">
-<h3>The Github way<a class="headerlink" href="#the-github-way" title="Permalink to this headline">#</a></h3>
-<p>To be done - information on posting of all datasets on the Github Svalbox discussion pages for referencing.</p>
-</section>
-<section id="the-qgis-way">
-<h3>The QGIS way<a class="headerlink" href="#the-qgis-way" title="Permalink to this headline">#</a></h3>
-<p>The easiest way is to connect to the SBL table by connecting to the Svalbox PostGIS server, see <a class="reference internal" href="#postgis-connection"><span class="std std-numref">Fig. 6</span></a>.
-The connection uses a limited-access account called <em>Bookkeeping_writer</em>, which only has write access to the SBL table.
-A password is provided for those that need access, and can be found ine Svalbox Password Manager (bitwarden).</p>
-<figure class="align-default" id="postgis-connection">
-<a class="reference internal image-reference" href="../_images/postgis_connection_svalbox.gif"><img alt="../_images/postgis_connection_svalbox.gif" src="../_images/postgis_connection_svalbox.gif" style="height: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Connecting to the Svalbox DB.
-The <em>bookkeeping_writer</em> account is used for editing of the SBL table;
-please ask the Svalbox admin for the password.</span><a class="headerlink" href="#postgis-connection" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>After adding the layer to your QGIS project, you may proceed with the editing of the SBL table.
-<a class="reference internal" href="#svalbox-edit-bookkeeping-layer"><span class="std std-numref">Fig. 7</span></a> visualises the workflow for this.
-Keep in mind that the table’s attributes (see <a class="reference internal" href="#sbl-metadata"><span class="std std-ref">Required SBL metadata</span></a>) may change over time, so think before just copying the example!</p>
-<figure class="align-default" id="svalbox-edit-bookkeeping-layer">
-<a class="reference internal image-reference" href="../_images/svalbox_edit_bookkeeping_layer.gif"><img alt="../_images/svalbox_edit_bookkeeping_layer.gif" src="../_images/svalbox_edit_bookkeeping_layer.gif" style="height: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">An example filled out for the hypothetical Longyearbyen data set.</span><a class="headerlink" href="#svalbox-edit-bookkeeping-layer" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>It is important to frequently save your progress to the SBL table!</p>
-<section id="post-editing-of-the-sbl">
-<h4>(Post-)Editing of the SBL<a class="headerlink" href="#post-editing-of-the-sbl" title="Permalink to this headline">#</a></h4>
-<p>You may edit previously created points with the <em>Bookkeeping_editor</em> credentials.
-These need to be provided when connecting to the Svalbox PostGIS server as seen in <a class="reference internal" href="#postgis-connection"><span class="std std-numref">Fig. 6</span></a>.</p>
-<p><a class="reference internal" href="#open-bookkeeping-attributes"><span class="std std-numref">Fig. 8</span></a> illustrates how the attribute table of a feature can be opened in QGIS.
-The animation illustrates the editing of the SBL, which is used to keep track of unpublished Svalbox data.</p>
-<figure class="align-default" id="open-bookkeeping-attributes">
-<a class="reference internal image-reference" href="../_images/open_bookkeeping_attributes.gif"><img alt="../_images/open_bookkeeping_attributes.gif" src="../_images/open_bookkeeping_attributes.gif" style="height: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Accessing attributes of a layer, editing the attributes, and saving the layer in QGIS.</span><a class="headerlink" href="#open-bookkeeping-attributes" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Remember to frequently save changes that have been made, while at the same time making sure that only correct revisions have been made.
-Once done, make sure to exit the editing mode my clicking the pencil icon once more, to leave the layer in the much safer <em>read-only mode</em>.
-The Svalbox DB takes care of people editing the same data elsewhere, so no need to worry about things.</p>
-</section>
-<section id="reporting-data-sizes">
-<h4>Reporting data sizes<a class="headerlink" href="#reporting-data-sizes" title="Permalink to this headline">#</a></h4>
-<p><a class="reference internal" href="#check-file-size"><span class="std std-numref">Fig. 9</span></a> shows how to get the folder size in windows.
-The SBL requires the folder size to be filled out in GB.</p>
-<figure class="align-default" id="check-file-size">
-<a class="reference internal image-reference" href="../_images/Check_file_size.gif"><img alt="../_images/Check_file_size.gif" src="../_images/Check_file_size.gif" style="height: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Checking folder size in windows.</span><a class="headerlink" href="#check-file-size" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>This is the number of bytes highlighted in <a class="reference internal" href="#check-file-size"><span class="std std-numref">Fig. 9</span></a>, which you divide by 1 000 000 000, and then round up.
-An example of this for the Gipshuken dataset is shown in <a class="reference internal" href="#folder-file-size-example"><span class="std std-numref">Fig. 10</span></a>.</p>
-<figure class="align-default" id="folder-file-size-example">
-<a class="reference internal image-reference" href="../_images/Folder_file_size_example.png"><img alt="../_images/Folder_file_size_example.png" src="../_images/Folder_file_size_example.png" style="height: 450px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Write down folder size.</span><a class="headerlink" href="#folder-file-size-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="tip admonition">
-<p class="admonition-title">Keep the SBL updated</p>
-<p>Make sure you keep the metadata in the SBL tables up to date…
-Exported a model or removed some photos?
-Then it is important to recheck the folder size while checking the processed/QC boxes.</p>
+<p>The respective checkboxes should only be checked once the steps have been completed.
+Keep in mind that this is not a linear progression - if the quality control step shows that more processing is needed, the <em>processed</em> checkbox will likely be set to <em>False</em> once more.
+The SBL is regularly checked for data sets that have been submitted to Svalbox.
+Said data are automatically removed from the SBL following archiving.</p>
+<section id="processing">
+<h2>Processing<a class="headerlink" href="#processing" title="Permalink to this headline">#</a></h2>
+<p>Various guidelines have been established for the standardized processing of data sets.
+Data type-specific tutorials are linked to below.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="c94a3c59-eb77-4c32-97f8-d85c59d7e1af" name="81776df6-18ee-4bde-8317-e451d4668ef0" type="radio">
+</input><label class="sd-tab-label" for="c94a3c59-eb77-4c32-97f8-d85c59d7e1af">
+Digital models</label><div class="sd-tab-content docutils">
+<p><a class="reference external" href="https://unisvalbard.github.io/Geo-SfM/content/lessons/l1/tutorial.html">Geo-SfM guidelines and tutorial</a></p>
+</div>
+<input id="94d8bdde-13de-4f50-81d0-c1fda666a78f" name="81776df6-18ee-4bde-8317-e451d4668ef0" type="radio">
+</input><label class="sd-tab-label" for="94d8bdde-13de-4f50-81d0-c1fda666a78f">
+TBD</label><div class="sd-tab-content docutils">
+<p>TBD.</p>
+</div>
 </div>
 </section>
-</section>
+<section id="quality-control">
+<h2>Quality control<a class="headerlink" href="#quality-control" title="Permalink to this headline">#</a></h2>
+<p>The quality control check is needed for quality assurance and standardisation of the data prior to submission to Svalbox.
+Both the data and the metadata need to follow established guidelines.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Work in progress - more to be added soon.</p>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="f5454293-834d-4bc4-8622-a6bfef35b58a" name="56d17ede-6170-41c0-a890-25f45f41a3d2" type="radio">
+</input><label class="sd-tab-label" for="f5454293-834d-4bc4-8622-a6bfef35b58a">
+Digital models</label><div class="sd-tab-content docutils">
+<p><em>Datapackage requirements</em></p>
+<ul class="simple">
+<li><p>One model per project</p></li>
+<li><p>Followed the file structure</p></li>
+<li><p>Input material only for this project</p></li>
+<li><p>Can you identify people? If so prosess again.</p></li>
+<li><p>Processing report, both html and pdf</p></li>
+<li><p>Max files size 50 gigabytes, if more contact admin.</p></li>
+<li><p>Package must include exported model</p></li>
+</ul>
+<p><em>Model requirements</em></p>
+<ul class="simple">
+<li><p>One chunk</p></li>
+<li><p>One deth map</p></li>
+<li><p>One dense cloud</p></li>
+<li><p>One 3D model with textures</p></li>
+</ul>
+<p>The following data products are optional:</p>
+<ul class="simple">
+<li><p>Tiled model</p></li>
+<li><p>Orthomosaic</p></li>
+<li><p>DEM</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not include annotations, back up project and remove from the to-be-uploaded dataset.</p>
+</div>
+<p><em>Metadata requirements</em></p>
+<ul class="simple">
+<li><p>A metadata file needs to be filled out for each data set.
+The metadata file is used to populate the Svalbox database with.</p></li>
+</ul>
+</div>
+</div>
 </section>
 </section>
 
@@ -576,17 +507,17 @@ Then it is important to recheck the folder size while checking the processed/QC 
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="read-access.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="svalbox_bookkeeping.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Read-access to Svalbox resources</p>
+            <p class="prev-next-title">Svalbox Bookkeeping</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="svalbox_qcing.html" title="next page">
+    <a class='right-next' id="next-link" href="merginmaps.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Svalbox quality control check-list</p>
+        <p class="prev-next-title">MerginMaps/Data in the field</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
